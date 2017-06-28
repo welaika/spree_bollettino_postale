@@ -3,9 +3,11 @@
 
 en:
   spree:
-    pay_with_bollettino_postale: Pay with postal transfer
-    bollettino_postale_instruction: Send us an email with the order number after you have completed the payment
-    current_account_number: Postal current account number
-    holder: Holder
-    reason_for_payment_title: Reason for payment
-    reason_for_payment: "Order Number: %{order_number}"
+    bollettino_postale:
+      pay_with_this_method: Pay with postal transfer
+      method_instructions: Send us an email with the order number after you have completed the payment.
+      current_account_number: Postal current account number
+      holder: Holder
+      reason_for_payment: Reason for payment
+      reason_for_payment_instructions: enter the order number (it will be sent by email after completing the order).
+      reason_for_payment_value: "Payment for order %{order_number}"

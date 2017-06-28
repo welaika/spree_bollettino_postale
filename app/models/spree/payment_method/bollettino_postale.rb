@@ -1,5 +1,5 @@
 module Spree
-  class PaymentMethod::BankTransfer < PaymentMethod
+  class PaymentMethod::BollettinoPostale < PaymentMethod
     preference :current_account_number, :string
     preference :holder, :string
 

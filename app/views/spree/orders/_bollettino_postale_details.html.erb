@@ -1,5 +1,11 @@
-<div class="well">
-  <h4><%= Spree.t(:pay_with_this_method, scope: :bollettino_postale) %></h4>
+<%
+  payment_method =
+    order.payments.map(&:payment_method).select do |pm|
+      pm.is_a?(Spree::PaymentMethod::BollettinoPostale)
+    end.first
+%>
+
+<% if payment_method.present? %>
   <p><%= Spree.t(:method_instructions, scope: :bollettino_postale) %></p>
   <p>
     <strong><%= Spree.t(:current_account_number, scope: :bollettino_postale) %>: </strong>
@@ -9,7 +15,6 @@
     <span><%= payment_method.preferred_holder %></span>
     <br>
     <strong><%= Spree.t(:reason_for_payment, scope: :bollettino_postale) %>: </strong>
-    <span><%= Spree.t(:reason_for_payment_instructions, scope: :bollettino_postale) %></span>
+    <span><%= Spree.t(:reason_for_payment_value, scope: :bollettino_postale, order_number: order.number) %> </span>
   </p>
-</div>
-
+<% end %>

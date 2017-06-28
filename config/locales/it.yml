@@ -3,9 +3,11 @@
 
 it:
   spree:
-    pay_with_bollettino_postale: Paga con bollettino postale
-    bollettino_postale_instruction: Mandaci una email appena hai fatto il versamento, indicando il numero d'ordine
-    current_account_number: C/C Numero
-    holder: Intestato a
-    reason_for_payment_title: Causale
-    reason_for_payment: "Ordine Numero: %{order_number}"
+    bollettino_postale:
+      pay_with_this_method: Paga con bollettino postale
+      method_instructions: Mandaci una email appena hai fatto il versamento, indicando il numero d'ordine.
+      current_account_number: C/C Numero
+      holder: Intestato a
+      reason_for_payment: Causale
+      reason_for_payment_instructions: inserisci il numero d'ordine (verrà spedito via email una volta completato l'ordine).
+      reason_for_payment_value: "Pagamento ordine %{order_number}"
