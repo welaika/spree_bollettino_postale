@@ -1,0 +1,11 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    pay_with_bollettino_postale: Pay with postal transfer
+    bollettino_postale_instruction: Send us an email with the order number after you have completed the payment
+    current_account_number: Postal current account number
+    holder: Holder
+    reason_for_payment_title: Reason for payment
+    reason_for_payment: "Order Number: %{order_number}"

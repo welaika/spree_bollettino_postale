@@ -1,0 +1,15 @@
+<div class="well">
+  <h4><%= Spree.t(:pay_with_bollettino_postale) %></h4>
+  <p><%= Spree.t(:bollettino_postale_instructions) %></p>
+  <p>
+    <strong><%= Spree.t(:current_account_number) %>: </strong>
+    <span><%= payment_method.preferred_current_account_number %></span>
+    <br>
+    <strong><%= Spree.t(:holder) %>: </strong>
+    <span><%= payment_method.preferred_holder %></span>
+    <br>
+    <strong><%= Spree.t(:reason_for_payment_title) %>: </strong>
+    <span><%= Spree.t(:reson_for_payment, order_number: payment.number) %></span>
+  </p>
+</div>
+
