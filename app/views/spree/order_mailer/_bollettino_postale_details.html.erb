@@ -6,6 +6,7 @@
 %>
 
 <% if payment_method.present? %>
+  <h4><%= Spree.t(:pay_with_this_method, scope: :bollettino_postale) %></h4>
   <p><%= Spree.t(:method_instructions, scope: :bollettino_postale) %></p>
   <p>
     <strong><%= Spree.t(:current_account_number, scope: :bollettino_postale) %>: </strong>
