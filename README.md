@@ -43,8 +43,16 @@ require 'spree_bollettino_postale/factories'
 
 ## Contributing
 
-If you'd like to contribute, please take a look at the
-[instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
-pull request.
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Author
+
+made with ❤️ and ☕️ by [weLaika](http://dev.welaika.com)
+
+## License
 
 Copyright (c) 2017-2018 [weLaika](https://dev.welaika.com), released under the New BSD License
